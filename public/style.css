@@ -75,7 +75,14 @@ body{
   justify-content: center;
   align-items: flex-start;
 }
+/* .img-fluid{
+  max-width: 50%;
+  max-height: 50%;
 
+} */
+/* .main_header_right_figure_img{
+
+} */
 .main_header_left p{
   font-size: 2rem;
 }
