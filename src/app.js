@@ -5,23 +5,24 @@ const port = process.env.PORT || 80;
 
 // public static path....
 const static_path = (path.join(__dirname, "../public"));
+app.set('view engine','hbs');
 app.use(express.static(static_path));
 
 // routing....
 app.get("",(req,res)=>{
-  res.send("Hello World");
+  res.render("index");
 })
 
 app.get("/about",(req,res)=>{
-  res.send("About me");
+  res.render("about");
 })
 
 app.get("/weather",(req,res)=>{
-  res.send("Weather page");
+  res.render("Weather page");
 })
 
 app.get("*",(req,res)=>{
-  res.send("404 Error");
+  res.render("404 Error");
 })
 app.listen(port,()=>{
   console.log(`listening to ${port}`)
