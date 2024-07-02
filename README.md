@@ -1,6 +1,6 @@
-# Weather Website
+# Weather Website (Under Development)
 
-This project is a simple weather website that allows users to check the weather for any location. It uses HTML, CSS, and Express.js.It's not completed yet, will be ready in few days
+This project is a simple weather website that allows users to check the weather for any location. It uses HTML, CSS, and Express.js.
 
 ## Features
 
