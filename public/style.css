@@ -83,11 +83,9 @@ body{
   margin-right: auto;
   width: 50%;
   border-radius: 8px;
+  box-shadow: 0 6px 6px -6px var(--main-color);
+  /* filter:drop-shadow(0 0.5rem 1 rem rgba(0,0,0,0.3)) ; */
 }
-
-/* .main_header_right_figure_img{
-
-} */
 .main_header_left p{
   font-size: 2rem;
 }
