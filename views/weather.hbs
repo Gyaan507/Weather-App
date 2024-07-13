@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+<link rel="stylesheet" href="style.css">
+  <title>Weather</title>
+  <link rel="shortcut icon" href="image/logo.png" type="image/png">
+  
+</head>
+<body>
+  <div class="container-fluid main_menu" >
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><i class="far fa-snowflake"></i> Weather Forecast <i class="far fa-snowflake"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/weather">Weather<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
+            </li> 
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            
+
+          </form>
+        </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- main header -->
+  <div class="container-fluid main_header" >
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+
+      <div class=" main_content">
+        <form class="temp_form">
+          <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+          <input type="submit" value="search" id="submitBtn">
+        </form>
+      </div>
+          
+          <div class="tempInformation">
+            <div class="top_layer">
+              <p id="day">Tuesday</p>
+              <p id="today_date">5 JULY</p>
+            </div>
+            <div class="main_layer">
+              <p id="city_name">Temperature will be shown here</p>
+              <div class="middle_layer data_hide">
+                <p id="temp"><span>0</span><sup>o</sup>C</p>
+                <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+              </div>
+            </div>
+          </div>
+        
+    
+        </div>
+    </div>
+  </div>
+
+
+  <!-- footer code -->
+  <footer>
+    <p> Created with 🖤 by Gyaneshwar Kumar</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    const CurrentDay = () => {
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wedday", "Thursday", "Friday", "Saturday"];
+    let current_day = new Date();
+    days = weekday[current_day.getDay()];
+    let day = document.getElementById('day');
+    day.innerText = days;
+    
+  };
+
+    const CurrentDate = () => {
+    var months =  ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    var DayDetails = new Date();
+    var month = DayDetails.getMonth() + 1;
+    let currentMonth = months[month - 1];
+    var date = DayDetails.getDate();
+    let today_date = document.getElementById('today_date')
+    today_date.innerText = `${date} ${currentMonth}`;
+    };
+    CurrentDay();
+   CurrentDate();
+  </script>
+</body>
+</html>

@@ -12,21 +12,21 @@ app.set('view engine', 'hbs');
 app.use(express.static(static_path));
 
 // routing....
-app.get("",(req,res)=>{
+app.get("", (req, res) => {
   res.render('index');
 })
 
-app.get("/about",(req,res)=>{
+app.get("/about", (req, res) => {
   res.render('about');
 })
 
-app.get("/weather",(req,res)=>{
-  res.render("Weather page");
+app.get("/weather", (req, res) => {
+  res.render("Weather");
 })
 
-app.get("*",(req,res)=>{
-  res.render("404 Error");
+app.get("*", (req, res) => {
+  res.render("404error");
 })
-app.listen(port,()=>{
+app.listen(port, () => {
   console.log(`listening to ${port}`)
 })
