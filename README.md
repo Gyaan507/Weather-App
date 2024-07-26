@@ -19,16 +19,20 @@ This is a simple weather application built using Express.js. The application tak
  1. Clone the repository by:
      ***git clone <repository-url>***
       ***cd weather***
-2. Install dependencies:
-     ***npm install***
-3. Get your API key:
-    Sign up at OpenWeatherMap to get your API key.
-    Create a .env file in the root directory and add your API key:
+    
+3. Install dependencies:
+   ***npm install***
+5. Get your API key:
+     Sign up at OpenWeatherMap to get your API key.
+     Create a .env file in the root directory and add your API key:
    
 ## Running the application
 To run the application, use the following command:
-    ***nodemon app.js***
-This will start the server, and you can access the application at http://localhost:3000.
+   ***nodemon app.js***
+   This will start the server, and you can access the application at http://localhost:3000.
+
+
+ 
 
 ## Project Structure
 **app.js**: Main entry point of the application.
@@ -42,13 +46,19 @@ This will start the server, and you can access the application at http://localho
 Open your browser and go to http://localhost:3000.
 Enter the city name in the input field and click the submit button.
 The current weather information for the entered city will be displayed.
-
 ## Dependencies
 **Express.js**: Web framework for Node.js.
-
 **Handlebars**: Templating engine.
 **Axios**: Promise-based HTTP client for making API requests.
 **dotenv:** Module to load environment variables from a .env file
+
+
+
+
+
+
+
+
 
   
 
