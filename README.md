@@ -45,6 +45,7 @@ The current weather information for the entered city will be displayed.
 
 ## Dependencies
 **Express.js**: Web framework for Node.js.
+
 **Handlebars**: Templating engine.
 **Axios**: Promise-based HTTP client for making API requests.
 **dotenv:** Module to load environment variables from a .env file
